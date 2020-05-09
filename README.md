@@ -14,5 +14,6 @@ The DELETE is used to remove a book from the database.
 JWT (Json Web Token) was used to give users token after they have been authenticated
 
 To run this file:
-- Install all the dependencies in the requirements.txt file
+- Install all the dependencies in the requirements.txt file by running:
+  pip install -r requirements.txt
 - Run the app.py file

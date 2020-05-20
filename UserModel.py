@@ -35,3 +35,4 @@ class User(db.Model):
         new_user = User(username = _username, password = _password)
         db.session.add(new_user)
         db.session.commit()
+        

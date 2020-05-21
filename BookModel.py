@@ -7,12 +7,12 @@ from settings import app
 # creating a database object by calling the SQLAlchemy constructor and passing in the app object
 db = SQLAlchemy(app)
 
-#the class Book will inherit the db.Model
+# the class Book will inherit the db.Model
 class Book(db.Model):
     __tablename__ = 'books' #creating a table name
     # our book has three properties
-    id = db.Column(db.Integer, primary_key=True) # this is the primary key
-    name = db.Column(db.String(80), nullable=False) #nullable is false so the column can't be empty
+    id = db.Column(db.Integer, primary_key=True)  # this is the primary key
+    name = db.Column(db.String(80), nullable=False)  #nullable is false so the column can't be empty
     price = db.Column(db.Float, nullable=False)
     isbn = db.Column(db.Integer, nullable=False)
 

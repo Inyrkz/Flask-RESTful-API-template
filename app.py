@@ -93,7 +93,7 @@ def validBookObjectPatch(bookObject):
 # adding new books using Post
 @app.route('/books', methods=['POST'])
 # using POST method to send data to our API using the same url '/books'
-@token_required
+# @token_required
 def add_book():
     '''Function to add new books to our list of books'''
     request_data = request.get_json()  # getting data from client
